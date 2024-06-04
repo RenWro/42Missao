@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercício Tab</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: left;
+        }
+        .tabela {
+            display: flex;
+        }
+        .celula {
+            padding: 20px;
+            border: 1px solid #333;
+            text-align: left;
+            width: 150px;
+        }
+        .celula:nth-child(odd) {
+            background-color: #ffb703; 
+        }
+        .celula:nth-child(even) {
+            background-color: #219ebc;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Condimentos</h1>
+    <div class="tabela">
+        <div class="celula">Mostarda</div>
+        <div class="celula">Maionese</div>
+    </div>
+</body>
+</html>
