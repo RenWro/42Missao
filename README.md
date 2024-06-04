@@ -1,6 +1,5 @@
 <h1> 42 Missao Web</h1>
-![image](https://github.com/RenWro/42Missao/assets/134458911/1da03b65-3c09-4ffb-be9c-2bc9cd8eb024)
-
+<img src="https://github.com/RenWro/42Missao/assets/134458911/1da03b65-3c09-4ffb-be9c-2bc9cd8eb024" alt="Banner da 42">
 <h2> FUNDAMENTOS DO TERMINAL E SHELL </h2>
 <ul>
   <li>Como usar o shell</li>
@@ -18,4 +17,3 @@
   <li></li>
   <li></li>
 </ul>
-![image](https://github.com/RenWro/42Missao/assets/134458911/1da03b65-3c09-4ffb-be9c-2bc9cd8eb024)
