@@ -12,7 +12,7 @@
   <li>Criar pastas adicionando prefixo</li>
 </ul>
 <br>
-<h2>Web </h2>
+<h2> WEB </h2>
 <ul>
   <li></li>
   <li></li>
