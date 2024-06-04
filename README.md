@@ -1,6 +1,8 @@
 <h1> 42 Missao Web</h1>
 <br>
+<a href="https://www.42sp.org.br/geral-missao-web">
 <img src="https://github.com/RenWro/42Missao/assets/134458911/1da03b65-3c09-4ffb-be9c-2bc9cd8eb024" alt="Banner da 42">
+</a>
 <br>
 <h2> FUNDAMENTOS DO TERMINAL E SHELL </h2>
 <ul>
