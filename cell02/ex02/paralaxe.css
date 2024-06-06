@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-container {
+    background-image: url('https://ogimg.infoglobo.com.br/in/23879603-f4a-d6c/FT1086A/d107dc15054899206bbb777eb7837950.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    font-style: italic
+    ;
+}
+
+.content-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.parallax-container-bottom {
+    background-image: url('https://i0.wp.com/fraenkelgallery.com/wp-content/uploads/2012/07/MR-0233.jpg?fit=1380%2C1078&quality=90&strip=all&ssl=1'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-bg-bottom {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
