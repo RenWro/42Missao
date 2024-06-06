@@ -16,9 +16,8 @@
 <br>
 <h2> WEB </h2>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Tópico 1 - HTML</li>
+  <li>Tópico 2 - CSS</li>
+  <li>Tópico 3 - Responsividade</li>
+  <li>Tópico 4 - JavaScript</li>
 </ul>
