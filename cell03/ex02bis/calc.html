@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Retro</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #FF6F61;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #F5F5DC;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-gap: 10px;
+            justify-items: center;
+        }
+
+        .calculator input[type="text"] {
+            grid-column: span 4;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #8B4513;
+            width: 240px;
+            text-align: right;
+        }
+
+        .calculator button {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #8B4513;
+            background-color: #8B4513;
+            color: white;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+        }
+
+        .calculator button:hover {
+            background-color: #A0522D;
+        }
+
+        .calculator button.operator {
+            background-color: #D2691E;
+        }
+
+        .calculator button.operator:hover {
+            background-color: #B8860B;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() { //$(document).ready() para garantir que o DOM
+            function clearDisplay() { //clearDisplay, appendToDisplay e calculate utilizando jQuery para manipulação do DOM
+                $('#display').val('');
+            }
+
+            function appendToDisplay(value) {
+                $('#display').val($('#display').val() + value);
+            }
+
+            function calculate() {
+                const display = $('#display');
+                try {
+                    const result = eval(display.val());
+                    if (isNaN(result)) {
+                        alert('Error :(');
+                        console.log('Error :(');
+                        display.val('');
+                    } else {
+                        display.val(result);
+                        console.log('Resultado: ' + result);
+                    }
+                } catch (error) {
+                    alert('Error :(');
+                    console.log('Error :(');
+                    display.val('');
+                }
+            }
+
+            $('.calculator button').click(function() { //Substitui os eventos onclick dos botões por eventos click do jQuery e $('.calculator button').click(function() {...}) para adicionar eventos de clique aos botões da calculadora e determinar o comportamento com base no texto do botão clicado.
+                const value = $(this).text();
+                if (value === 'C') {
+                    clearDisplay();
+                } else if (value === '=') {
+                    calculate();
+                } else {
+                    appendToDisplay(value);
+                }
+            });
+
+            setInterval(() => {
+                alert('Please, use me...');
+            }, 30000);
+        });
+    </script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <button>C</button>
+        <button>/</button>
+        <button>*</button>
+        <button>-</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>=</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button>.</button>
+    </div>
+</body>
+</html>
