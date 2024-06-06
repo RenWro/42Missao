@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balão Interativo</title>
+    <style>
+        .balao {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease; /* Para ter transições suave para animações */
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balao">Pensa em mim, clica em mim!</div>
+
+    <script>
+        const balao = document.querySelector('.balao');
+        const cores = ['red', 'green', 'blue'];
+        let corIndex = 0;
+
+        balao.addEventListener('click', function () {
+            if (parseInt(getComputedStyle(balao).width) < 420) {
+                balao.style.width = `${parseInt(getComputedStyle(balao).width) + 10}px`;
+                balao.style.height = `${parseInt(getComputedStyle(balao).height) + 10}px`;
+                balao.style.backgroundColor = cores[corIndex];
+                corIndex = (corIndex + 1) % cores.length;
+            } else {
+                balao.style.width = '200px';
+                balao.style.height = '200px';
+            }
+        });
+
+
+
+            balao.addEventListener('mouseout', function () {
+                if (parseInt(getComputedStyle(balao).width) > 200) {
+                    balao.style.width = `${parseInt(getComputedStyle(balao).width) - 5}px`;
+                    balao.style.height = `${parseInt(getComputedStyle(balao).height) - 5}px`;
+                    corIndex = (corIndex - 1 + cores.length) % cores.length;
+                    balao.style.backgroundColor = cores[corIndex];
+        }
+
+        });
+    </script>
+
+</body>
+
+</html>
