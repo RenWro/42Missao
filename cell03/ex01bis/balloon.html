@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balão Interativo</title>
+    <style>
+        .balao {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease; /* Para ter transições suave para animações */
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() { //addEventListener foi substituido por métodos do jQuery (click e mouseout) e $(document).ready() para garantir que o DOM esteja completamente carregado antes de executar o código
+            const cores = ['red', 'green', 'blue'];
+            let corIndex = 0;
+
+            $('.balao').click(function() { //$('.balao').click(function() {...}) para adicionar um evento de clique ao elemento com a classe balao
+                let balao = $(this); //$(this) para referenciar o elemento clicado e css para alterar as propriedades de estilo.
+                if (parseInt(balao.css('width')) < 420) {
+                    balao.css({
+                        width: `${parseInt(balao.css('width')) + 10}px`,
+                        height: `${parseInt(balao.css('height')) + 10}px`,
+                        backgroundColor: cores[corIndex]
+                    });
+                    corIndex = (corIndex + 1) % cores.length;
+                } else {
+                    balao.css({
+                        width: '200px',
+                        height: '200px'
+                    });
+                }
+            });
+
+            $('.balao').mouseout(function() { // lógica para reduzir o tamanho do balão e mudar a cor de fundo no evento mouseout com $('.balao').mouseout(function() {...})
+                let balao = $(this);
+                if (parseInt(balao.css('width')) > 200) {
+                    balao.css({
+                        width: `${parseInt(balao.css('width')) - 5}px`,
+                        height: `${parseInt(balao.css('height')) - 5}px`,
+                        backgroundColor: cores[(corIndex - 1 + cores.length) % cores.length]
+                    });
+                    corIndex = (corIndex - 1 + cores.length) % cores.length;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="balao">Pensa em mim, clica em mim!</div>
+</body>
+</html>
