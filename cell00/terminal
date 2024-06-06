@@ -1,0 +1,191 @@
+<pre>c2r10p2% ls -p | grep -v &apos;/\|^\..*$&apos; | tr &apos;\n&apos; &apos;,&apos; 
+
+goinfre,z,<span style="background-color:#EEEEEC"><font color="#2D2D2D"><b>%</b></font></span>                                                                     c2r10p2% ls
+Desktop    Downloads  missao_42  Pictures  Templates  z
+Documents  goinfre    Music	 Public    Videos
+c2r10p2% cat z  
+Z
+c2r10p2% rm z
+c2r10p2% ls   
+Desktop    Downloads  missao_42  Pictures  Templates
+Documents  goinfre    Music	 Public    Videos
+c2r10p2% cd missao_42
+c2r10p2% cd cell00
+c2r10p2% cd ex02
+c2r10p2% ls
+c2r10p2% ls -p | grep -v &apos;/\|^\..*$&apos; | tr &apos;\n&apos; &apos;,&apos; &gt; midLS
+
+c2r10p2% cat midLS
+midLS,<span style="background-color:#EEEEEC"><font color="#2D2D2D"><b>%</b></font></span>                                                                         c2r10p2% cat &gt; midLS 
+ls -p | grep -v &apos;/\|^\..*$&apos; | tr &apos;\n&apos; &apos;,&apos;
+c2r10p2% cat midLS
+ls -p | grep -v &apos;/\|^\..*$&apos; | tr &apos;\n&apos; &apos;,&apos;
+c2r10p2% fish
+Welcome to fish, the friendly interactive shell
+Type `help` for instructions on how to use fish
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex02</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">..</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">mkdir</font> <font color="#00AFFF">ex03</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">find</font> <font color="#00AFFF"><u style="text-decoration-style:single">.</u></font> <font color="#00AFFF">-maxdepth</font> <font color="#00AFFF">3</font> <font color="#00AFFF">-type</font> <font color="#00AFFF">f</font> <font color="#00AFFF">-o</font> <font color="#00AFFF">-type</font> <font color="#00AFFF">d</font> <font color="#009900">|</font> <font color="#005FD7">wc</font> <font color="#00AFFF">-l</font> 
+7
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">..</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/missao_42</font>&gt; <font color="#005FD7">mkdir</font> <font color="#00AFFF">cell01</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/missao_42</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">cell01</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell01</font>&gt; <font color="#005FD7">mkdir</font> <font color="#00AFFF">ex00</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell01</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">..</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/missao_42</font>&gt; <font color="#005FD7">cat</font> <font color="#00AFFF">--help</font>
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+  -A, --show-all           equivalent to -vET
+  -b, --number-nonblank    number nonempty output lines, overrides -n
+  -e                       equivalent to -vE
+  -E, --show-ends          display $ at end of each line
+  -n, --number             number all output lines
+  -s, --squeeze-blank      suppress repeated empty output lines
+  -t                       equivalent to -vT
+  -T, --show-tabs          display TAB characters as ^I
+  -u                       (ignored)
+  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      --help     display this help and exit
+      --version  output version information and exit
+
+Examples:
+  cat f - g  Output f&apos;s contents, then standard input, then g&apos;s contents.
+  cat        Copy standard input to standard output.
+
+GNU coreutils online help: &lt;https://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;https://www.gnu.org/software/coreutils/cat&gt;
+or available locally via: info &apos;(coreutils) cat invocation&apos;
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/missao_42</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">cell00</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 3 -type f | wc -l</font><font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 3 -type f | wc -l</font><font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 3 -type f</font><font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 3 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(finf . -maxdepth 3 -type d | wc - l)</font>
+                             <font color="#999900">echo &quot;Número de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Número de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#FF0000">./count_files.sh</font> 
+./count_files.sh: line 3: finf: command not found
+wc: l: No such file or directory
+Número de arquivos: 1
+Número de diretórios:       0       0       0 -
+      0       0       0 total
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(finf . -maxdepth 1 -type d | wc - l)</font>
+                             <font color="#999900">echo &quot;Número de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Número de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+./count_files.sh: line 3: finf: command not found
+wc: l: No such file or directory
+Número de arquivos: 1
+Número de diretórios:       0       0       0 -
+      0       0       0 total
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">./count_files.sh</font> <font color="#009900">|</font> <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font> 
+./count_files.sh: line 3: finf: command not found
+wc: l: No such file or directory
+NM-CM-:mero de arquivos: 1$
+NM-CM-:mero de diretM-CM-3rios:       0       0       0 -$
+      0       0       0 total$
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 3 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(find . -maxdepth 3 -type d | wc - l)</font>
+                             <font color="#999900">echo &quot;Número de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Número de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+wc: l: No such file or directory
+Número de arquivos: 1
+Número de diretórios:       1       1       2 -
+      1       1       2 total
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(find . -maxdepth 1 -type d | wc - l)</font>
+                             <font color="#999900">echo &quot;Número de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Número de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+wc: l: No such file or directory
+Número de arquivos: 1
+Número de diretórios:       1       1       2 -
+      1       1       2 total
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">./count_files.sh</font> <font color="#009900">|</font> <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font>
+wc: l: No such file or directory
+NM-CM-:mero de arquivos: 1$
+NM-CM-:mero de diretM-CM-3rios:       1       1       2 -$
+      1       1       2 total$
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(find . -maxdepth 1 -type d | wc - l)</font>
+                             <font color="#999900">echo &quot;Numero de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Numero de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+wc: l: No such file or directory
+Numero de arquivos: 1
+Numero de diretórios:       1       1       2 -
+      1       1       2 total
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(ls -d */ | wc -l)</font>
+                             <font color="#999900">echo &quot;Numero de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Numero de diretórios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+ls: cannot access &apos;*/&apos;: No such file or directory
+Numero de arquivos: 1
+Numero de diretórios: 0
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font> 
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">./count_files.sh</font> <font color="#009900">|</font> <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font>
+ls: cannot access &apos;*/&apos;: No such file or directory
+Numero de arquivos: 1$
+Numero de diretM-CM-3rios: 0$
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(ls -d */ | wc -l)</font>
+                             <font color="#999900">echo &quot;Numero de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Numero de diretorios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+ls: cannot access &apos;*/&apos;: No such file or directory
+Numero de arquivos: 1
+Numero de diretorios: 0
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">./count_files.sh</font> <font color="#009900">|</font> <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font>
+ls: cannot access &apos;*/&apos;: No such file or directory
+Numero de arquivos: 1$
+Numero de diretorios: 0$
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">num_files=$(find . -maxdepth 1 -type f | wc -l)</font>
+                             <font color="#999900">num_dirs=$(ls -d | wc -l)</font>
+                             <font color="#999900">echo &quot;Numero de arquivos: $num_files&quot;</font>
+                             <font color="#999900">echo &quot;Numero de diretorios: $num_dirs&quot;&apos;</font> <font color="#00AFFF">&gt;</font> <font color="#00AFFF">count_files.sh</font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">count_files.sh</u></font> <font color="#00A6B2">&amp;&amp;</font> <font color="#005FD7">./count_files.sh</font>
+Numero de arquivos: 1
+Numero de diretorios: 1
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">./count_files.sh</font> <font color="#009900">|</font> <font color="#005FD7">cat</font> <font color="#00AFFF">-e</font>
+Numero de arquivos: 1$
+Numero de diretorios: 1$
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex03</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">..</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">mkdir</font> <font color="#00AFFF">ex04</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">ls</font>
+<font color="#3465A4"><b>ex00</b></font>/  <font color="#3465A4"><b>ex01</b></font>/  <font color="#3465A4"><b>ex02</b></font>/  <font color="#3465A4"><b>ex03</b></font>/  <font color="#3465A4"><b>ex04</b></font>/
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/cell00</font>&gt; <font color="#005FD7">cd</font> <font color="#00AFFF"><u style="text-decoration-style:single">ex04</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">touch</font> <font color="#00AFFF">argv.sh</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">ls</font>
+argv.sh
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">echo</font> <font color="#999900">&apos;#!/bin/bash</font>
+                             <font color="#999900">if [ $# -eq 0 ]; then</font>
+                             <font color="#999900">echo &quot;Nao tem argumentos=)&quot;</font>
+                             <font color="#999900">exit 1</font>
+                             <font color="#999900">fi</font>
+                             <font color="#999900">echo &quot;$1&quot;</font>
+                             <font color="#999900">if [ $# -ge 2 ]; then</font>
+                             <font color="#999900">echo &quot;$2&quot;</font>
+                             <font color="#999900">fi</font>
+                             <font color="#999900">if [ $# -ge 3 ]; then</font>
+                             <font color="#999900">echo &quot;$3&quot;</font>
+                             <font color="#999900">fi</font>
+                             <font color="#999900">&apos;</font><font color="#00AFFF">&gt;</font> <font color="#00AFFF">argv.sh</font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">chmod</font> <font color="#00AFFF">+x</font> <font color="#00AFFF"><u style="text-decoration-style:single">argv.sh</u></font>
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">./argv.sh</font> <font color="#00AFFF">42</font>
+42
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">./argv.sh</font> <font color="#00AFFF">oi</font> <font color="#00AFFF">tudo</font> <font color="#00AFFF">bem</font>
+oi
+tudo
+bem
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font>&gt; <font color="#005FD7">./argv.sh</font> <font color="#00AFFF">oi</font> <font color="#00AFFF">tudo</font> <font color="#00AFFF">bem</font> <font color="#00A6B2">?</font> 
+fish: No matches for wildcard “?”. See `help expand`.
+./argv.sh oi tudo bem ? 
+                      ^
+<font color="#8AE234">rbiagion</font>@c2r10p2 <font color="#4E9A06">~/m/c/ex04</font><font color="#CC0000"> [</font><font color="#CC0000"><b>124</b></font><font color="#CC0000">]</font>&gt; 
+</pre>
