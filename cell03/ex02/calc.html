@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Retro</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #FF6F61;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #F5F5DC;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .calculator input, .calculator select {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #8B4513;
+            width: 60px;
+        }
+
+        .calculator input[type="submit"] {
+            background-color: #8B4513;
+            color: white;
+            cursor: pointer;
+        }
+
+        .calculator input[type="submit"]:hover {
+            background-color: #A0522D;
+        }
+
+        .calculator input[type="number"] {
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <input type="number" id="leftOperand" placeholder="Left Operand" step="any">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="number" id="rightOperand" placeholder="Right Operand" step="any">
+    <input type="submit" value="Try me!" onclick="calculate()">
+</div>
+
+<script>
+    // Funções de acordo com o exigido
+
+    function calculate() {
+        const leftOperand = parseFloat(document.getElementById('leftOperand').value);
+        const operator = document.getElementById('operator').value;
+        const rightOperand = parseFloat(document.getElementById('rightOperand').value);
+
+        if (isNaN(leftOperand) || isNaN(rightOperand)) {
+            alert('Error :(');
+            console.log('Error :(');
+            return;
+        }
+
+        let result;
+        switch (operator) {
+            case '+':
+                result = leftOperand + rightOperand;
+                break;
+            case '-':
+                result = leftOperand - rightOperand;
+                break;
+            case '*':
+                result = leftOperand * rightOperand;
+                break;
+            case '/':
+                if (rightOperand === 0) {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+                result = leftOperand / rightOperand;
+                break;
+            case '%':
+                if (rightOperand === 0) {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+                result = leftOperand % rightOperand;
+                break;
+            default:
+                alert('Error :(');
+                console.log('Error :(');
+                return;
+        }
+
+        alert('Resultado: ' + result);
+        console.log('Resultado: ' + result);
+    }
+
+    // Alerta a cada 30 segundos
+    setInterval(() => {
+        alert('Please, use me...');
+    }, 30000);
+</script>
+</body>
+</html>
 
