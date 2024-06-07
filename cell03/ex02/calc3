@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Retro</title>
     <style>
+        /* CSS incorporado */
         body {
             font-family: 'Courier New', Courier, monospace;
             background-color: #FF6F61;
@@ -23,7 +24,6 @@
             padding: 20px;
             display: grid;
             grid-template-columns: repeat(4, 60px);
-            grid-template-rows: repeat(6, 60px);
             grid-gap: 10px;
             justify-items: center;
         }
@@ -35,7 +35,7 @@
             padding: 10px;
             border-radius: 4px;
             border: 1px solid #8B4513;
-            width: 100%;
+            width: 240px;
             text-align: right;
         }
 
@@ -48,8 +48,8 @@
             background-color: #8B4513;
             color: white;
             cursor: pointer;
-            width: 100%;
-            height: 100%;
+            width: 60px;
+            height: 60px;
         }
 
         .calculator button:hover {
@@ -64,27 +64,26 @@
             background-color: #B8860B;
         }
 
-        .calculator .clear {
-            background-color: #8B4513; /* Marrom */
+        .calculator button.zero {
+            grid-column: span 2;
         }
 
-        .calculator .equals {
-            grid-column: span 4;
-            grid-row: 6;
-            background-color: #5F9EA0; /* Azul cadete */
-            height: 100%;
+        .calculator button.equals {
+            grid-row: span 2;
+            background-color: #5F9EA0; /* Cor azul cadete */
         }
 
-        .calculator .decimal {
-            grid-column: 3;
-            grid-row: 5;
+        .calculator button.equals:hover {
+            background-color: #53868B; /* Cor azul cadete mais escura */
         }
 
-        .calculator .zero {
-            grid-column: 1 / span 2;
-            grid-row: 5;
+        .calculator button.clear {
+            background-color: #28a745; /* Cor verde */
         }
 
+        .calculator button.clear:hover {
+            background-color: #218838; /* Cor verde mais escura */
+        }
     </style>
 </head>
 <body>
@@ -105,11 +104,13 @@
     <button onclick="appendToDisplay('2')">2</button>
     <button onclick="appendToDisplay('3')">3</button>
     <button class="zero" onclick="appendToDisplay('0')">0</button>
-    <button class="decimal" onclick="appendToDisplay('.')">.</button>
+    <button onclick="appendToDisplay('.')">.</button>
     <button class="equals" onclick="calculate()">=</button>
 </div>
 
 <script>
+    // JavaScript incorporado
+
     function clearDisplay() {
         document.getElementById('display').value = '';
     }
@@ -137,8 +138,9 @@
         }
     }
 
+    // Exibir um alerta a cada 30 segundos
     setInterval(() => {
-        alert('Ei, você ainda está aí...?');
+        alert('Please, use me...');
     }, 30000);
 </script>
 </body>
