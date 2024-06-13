@@ -8,7 +8,7 @@
 <br>
 <img width="834" src="https://github.com/RenWro/42Missao/assets/134458911/40e40a03-fa33-48a1-b499-611a49fe6b01" alt="Sequência de exercícios chamados de Holygraph na missão web da 42" style="display: block; margin: auto;">
 <br>
-<h3>Componentes do projeto 🧩</h3>
+<h3>Componentes do projeto </h3>
 <ul> 
   <li>Cellule0: Shell</li>
  <li>Cellule1: HTML and CSS</li>
@@ -17,7 +17,7 @@
  <li>Cellule4: Rush</li>
  </ul>
 
-<h3>Linguagens 👅</h3>
+<h3>Linguagens </h3>
 <ul> 
   <li>Shell</li>
   <li>HTML</li>
@@ -26,7 +26,7 @@
   <li>jQuery</li>
 </ul>
 
-<h3>Tecnologias 🛠</h3>
+<h3>Tecnologias </h3>
 <ul>
  <li>Shell</li>
  <li>HTML</li>
@@ -36,11 +36,11 @@
 </ul>
 
 
-<h3>Tempo de desenvolvimento do projeto⏰</h3> 
+<h3>Tempo de desenvolvimento do projeto</h3> 
 <ul>
   <li>5 dias</li>
 </ul>
-
+<br>
 <h1>Conteúdo abordado</h1>
 
 <h2> FUNDAMENTOS DO TERMINAL E SHELL </h2>
@@ -60,3 +60,5 @@
   <li>Tópico 3 - Responsividade</li>
   <li>Tópico 4 - JavaScript</li>
 </ul>
+
+Licença : Distributed under the <a href="https://choosealicense.com/licenses/mit/">  MIT License </a>. See LICENSE for more information.
