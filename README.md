@@ -6,7 +6,7 @@
 <br>
 <h2>Holygraph da missão</h2>
 <br>
-<img width="834" src="https://github.com/RenWro/42Missao/assets/134458911/40e40a03-fa33-48a1-b499-611a49fe6b01" alt="Sequência de exercícios chamados de Holygraph na missão web da 42" style="display: block; margin: auto;">
+<img width="834" src="https://github.com/RenWro/42Missao/assets/134458911/a65363b7-e828-4067-a849-11202b0b1711" style="display: block; margin: auto;" alt="Sequência de exercícios chamados de Holygraph na missão web da 42">
 <br>
 <h3>Componentes do projeto </h3>
 <ul> 
@@ -61,6 +61,6 @@
   <li>Tópico 4 - JavaScript</li>
 </ul>
 <br>
+<hr>
 <h3>Licença</h3> 
-<br>
 Distribuição considerando a  <a href="https://choosealicense.com/licenses/mit/">  MIT License </a>. Veja a documentação para mais informações.
