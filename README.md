@@ -6,7 +6,7 @@
 <br>
 <h2>Holygraph da missão</h2>
 <br>
-<img width="834" alt="Captura de Tela 2024-06-13 às 16 22 08" src="https://github.com/RenWro/42Missao/assets/134458911/40e40a03-fa33-48a1-b499-611a49fe6b01">
+<img width="834" src="https://github.com/RenWro/42Missao/assets/134458911/40e40a03-fa33-48a1-b499-611a49fe6b01" alt="Sequência de exercícios chamados de Holygraph na missão web da 42" style="display: block; margin: auto;">
 <br>
 <h2> FUNDAMENTOS DO TERMINAL E SHELL </h2>
 <ul>
