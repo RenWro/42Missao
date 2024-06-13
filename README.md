@@ -60,5 +60,7 @@
   <li>Tópico 3 - Responsividade</li>
   <li>Tópico 4 - JavaScript</li>
 </ul>
-
-Licença : Distributed under the <a href="https://choosealicense.com/licenses/mit/">  MIT License </a>. See LICENSE for more information.
+<br>
+<h3>Licença</h3> 
+<br>
+Distribuição considerando a  <a href="https://choosealicense.com/licenses/mit/">  MIT License </a>. Veja a documentação para mais informações.
